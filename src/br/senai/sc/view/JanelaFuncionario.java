@@ -75,16 +75,21 @@ public class JanelaFuncionario {
         dao.buscaFeuncionarioByNome(nome, funcionarios);
 
         if (fAltera != null) {
-            fAltera.setRg(JOptionPane.showInputDialog("Informe o rg"));
+            
+            fAltera.setNome(JOptionPane.showInputDialog("Informe o nome", fAltera.getNome()));
+            fAltera.setRg(JOptionPane.showInputDialog("Informe o rg",fAltera.getRg()));
             fAltera.setDataNascimento(JOptionPane.showInputDialog("Informe a data de nascimento: ", fAltera.getDataAdmissao()));
-            fAltera.setCpf(JOptionPane.showInputDialog("Informe o cpf: "));
-            fAltera.setEndereco(JOptionPane.showInputDialog("Informe o endereço: "));
-            fAltera.setTelefone(JOptionPane.showInputDialog("Informe o telefone: "));
-            fAltera.setDataCadatro(JOptionPane.showInputDialog("Informe a data do cadastro: "));
-            fAltera.setSalario(Double.parseDouble(JOptionPane.showInputDialog("Informe o salário: ")));
-            fAltera.setDataAdmissao(JOptionPane.showInputDialog("Informe a data de admissão: "));
-            fAltera.setCtps(JOptionPane.showInputDialog("Informe o ctps: "));
-            fAltera.setCargo(JOptionPane.showInputDialog("Informe o cargo: "));
+            fAltera.setCpf(JOptionPane.showInputDialog("Informe o cpf",fAltera.getCpf()));
+            fAltera.setEndereco(JOptionPane.showInputDialog("Informe o endereço",fAltera.getEndereco()));
+            fAltera.setTelefone(JOptionPane.showInputDialog("Informe o telefone",fAltera.getTelefone()));
+            fAltera.setDataCadatro(JOptionPane.showInputDialog("Informe a data do cadastro",fAltera.getDataCadatro()));
+            fAltera.setSalario(Double.parseDouble(JOptionPane.showInputDialog("Informe o salário",fAltera.getSalario())));
+            fAltera.setDataAdmissao(JOptionPane.showInputDialog("Informe a data de admissão",fAltera.getDataAdmissao()));
+            fAltera.setCtps(JOptionPane.showInputDialog("Informe o ctps",fAltera.getCtps()));
+            fAltera.setCargo(JOptionPane.showInputDialog("Informe o cargo",fAltera.getCargo()));
+            
+            dao.altera(nome, funcionarios, fAltera);
+            
         }
     }
 }
