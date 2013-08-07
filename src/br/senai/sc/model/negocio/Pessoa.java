@@ -3,7 +3,7 @@ package br.senai.sc.model.negocio;
 /**
  * essa classe representa as pessoas do software
  * @version 1.0 21/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class Pessoa {
     

@@ -3,7 +3,7 @@ package br.senai.sc.model.negocio;
 /**
  * Classe que representa todas as pessoas físicas do software
  * @version 1.0 31/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class PessoaFisica extends Pessoa {
     private String cpf;

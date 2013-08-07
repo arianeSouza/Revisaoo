@@ -3,7 +3,7 @@ package br.senai.sc.model.negocio;
 /**
  * Classe que representa os fornecedores do sistema
  * @version 1.0 31/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class Fornecedor extends PessoaJuridica {
 

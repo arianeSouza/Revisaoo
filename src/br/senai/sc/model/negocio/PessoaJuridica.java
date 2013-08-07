@@ -4,7 +4,7 @@ package br.senai.sc.model.negocio;
 /**
  * Classe que represeta as pessoas jurídicas do sistema
  * @version 1.0 31/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class PessoaJuridica extends Pessoa {
     private String cnpj;

@@ -3,7 +3,7 @@ package br.senai.sc.model.negocio;
 /**
  * Classe que representa as transportadoras do sistema
  * @version  1.0 31/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class Transportadora extends PessoaJuridica {
     
