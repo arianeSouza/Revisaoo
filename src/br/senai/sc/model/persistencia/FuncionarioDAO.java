@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * Classe que guarda as informações referentes aos funcionarios.
  *
  * @version 1.0 31/07/13
- * @author larissa_mezari
+ * @author gabriel_arsenio
  */
 public class FuncionarioDAO {
 
@@ -61,6 +61,9 @@ public class FuncionarioDAO {
         }
         return null;
     }
+
+    public void altera(String nome, List<Funcionario> funcionarios, Funcionario fAltera, Funcionario f1) {
+        excluir(nome, funcionarios);
+        adicionar(fAltera, funcionarios);
+    }
 }
-
-
