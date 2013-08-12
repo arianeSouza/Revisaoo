@@ -9,6 +9,8 @@ package br.senai.sc.model.negocio;
  * @author gabriel_arsenio
  */
 public class Produto extends Fornecedor {
+    
+    
     private String nomeProduto;    
     private double valor;
     private int quantidade;

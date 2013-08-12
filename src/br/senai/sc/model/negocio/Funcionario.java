@@ -6,6 +6,7 @@ package br.senai.sc.model.negocio;
  * @author gabriel_arsenio
  */
 public class Funcionario extends PessoaFisica {
+    
     private double salario;
     private String dataAdmissao;
     private String ctps;
@@ -14,7 +15,7 @@ public class Funcionario extends PessoaFisica {
     public Funcionario() {
         
     }
-
+    
     public double getSalario() {
         return salario;
     }
